@@ -28,6 +28,7 @@ Install other packages:
 pip install -r .\requirement.txt
 ```
 
+# Labeling Tool Starts
 
 ## Step 1
 
@@ -56,8 +57,19 @@ python segment_anything_annotator.py --onnx-model-path sam_onnx.onnx --dataset-p
 
 After you runn all things successfully, you will get the below UI in your device.
 
+
+
 <p align="center">
   <img src="assets/ui_demo.png?raw=true" width="75%" />
 </p>
 
 Then you can enjoy your work!
+
+
+# visualization
+
+To visualize your work, you can run:
+
+```
+python cocoviewer.py -i .\example_dataset -a .\example_dataset\annotations.json
+```
