@@ -86,3 +86,4 @@ if __name__ == "__main__":
     opset_version = args.opset_version
 
     main(checkpoint_path, model_type, onnx_model_path, orig_im_size, opset_version, args.quantize)
+    print('>>>>> onnx file is create successfully! <<<<<')

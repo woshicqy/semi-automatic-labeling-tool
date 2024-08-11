@@ -27,7 +27,8 @@ def main(checkpoint_path, model_type, device, images_folder, embeddings_folder):
 
         out_path = os.path.join(embeddings_folder, os.path.splitext(image_name)[0] + ".npy")
         np.save(out_path, image_embedding)
-
+    print(f'>>>>> Image embeddings processing is done, all embeddings are saved in {embeddings_folder}<<<<<')
+    
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--checkpoint-path", type=str, default="./sam_vit_h_4b8939.pth")
