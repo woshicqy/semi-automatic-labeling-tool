@@ -56,4 +56,8 @@ python segment_anything_annotator.py --onnx-model-path sam_onnx.onnx --dataset-p
 
 After you runn all things successfully, you will get the below UI in your device.
 
+<p align="center">
+  <img src="assets/ui_demo.png?raw=true" width="75%" />
+</p>
 
+Then you can enjoy your work!
